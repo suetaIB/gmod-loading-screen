@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video class="background-video" autoplay muted loop playsinline preload="auto">
+    <source src="assets/background.webm" type="video/webm">
+  </video>
+
+  <main class="overlay">
+    <section class="panel">
+      <p class="eyebrow">DarkRP Server</p>
+      <h1 id="server-name">Loading server</h1>
+      <p class="status">Loading Lua, addons and game resources</p>
+
+      <div class="progress" aria-hidden="true">
+        <span></span>
+      </div>
+
+      <dl class="details">
+        <div>
+          <dt>Map</dt>
+          <dd id="map-name">...</dd>
+        </div>
+        <div>
+          <dt>Player</dt>
+          <dd id="steam-id">...</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
